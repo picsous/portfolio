@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+section {
+  padding: 40px;
+}
+
+.card .card-image img {
+  max-height: 150px;
+  padding: 20px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.card .card-image img:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
