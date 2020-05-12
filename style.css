@@ -5,13 +5,17 @@ html {
 }
 
 body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+  margin: 0;
 }
 
-main {
-  flex: 1 0 auto;
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 section {
@@ -22,14 +26,60 @@ section {
   max-height: 150px;
   padding: 20px;
   -webkit-transition: all 0.5s ease;
+  -moz-transition: background-color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out;
+  -ms-transition: background-color 0.5s ease-in-out;
   transition: all 0.5s ease;
 }
 
 .skill:hover {
   -webkit-transform: rotate(360deg);
+  -moz-transition: background-color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out;
+  -ms-transition: background-color 0.5s ease-in-out;
   transform: rotate(360deg);
 }
 
-nav ul li {
-  padding: 0 15px !important;
+.button_lang {
+  background-color: #1976D2;
+  color: #FFF;
+  padding: 0 25px;
+
+  -webkit-transition: background-color .3s ease-in-out;
+  -moz-transition: background-color .3s ease-in-out;
+  -o-transition: background-color .3s ease-in-out;
+  -ms-transition: background-color .3s ease-in-out;
+  transition: background-color .3s ease-in-out;
+}
+.button_lang:hover, .current_lang {
+  background-color: #0d5194;
+  -webkit-transition: background-color .3s ease-in-out;
+  -moz-transition: background-color .3s ease-in-out;
+  -o-transition: background-color .3s ease-in-out;
+  -ms-transition: background-color .3s ease-in-out;
+  transition: background-color .3s ease-in-out;
+}
+ul li {
+  width: auto;
+  display: inline;
+}
+
+.used-techno {
+  margin-top: 30px;
+}
+
+.square {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  background: white;
+  border: 5px solid white;
+}
+
+.background-cnt {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
