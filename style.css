@@ -29,3 +29,7 @@ section {
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
 }
+
+nav ul li {
+  padding: 0 15px !important;
+}
